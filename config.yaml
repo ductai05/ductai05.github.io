@@ -128,9 +128,7 @@ params:
     intro: "Hi, my name is"
     title: "Duc Tai."
     subtitle: "B.Sc. student in AI"
-    content: |
-      AI Major, FIT@HCMUS - VNUHCM.
-      Math Major, HSfG@BaoLoc.
+    content: "AI Major, FIT@HCMUS - VNUHCM.<br>Math Major, HSfG@BaoLoc."
     image: /images/me2.png
     bottomImage:
       enable: true
