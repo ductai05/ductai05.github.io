@@ -5,7 +5,7 @@ draft: false
 description: "My gallery :earth_asia:"
 layout: "gallery"
 galleryImages:
- - src: "/images/ML.png"
+ - src: "\images\ML.png"
 viewer : true
 viewerOptions : {
     title: false
