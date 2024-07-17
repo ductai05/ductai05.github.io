@@ -5,7 +5,11 @@ draft: false
 description: "My gallery :earth_asia:"
 layout: "gallery"
 galleryImages:
- - src: "/images/ML.png"
+ - src: "/images/gallery/cuteg.png"
+ - src: "/images/gallery/chisato.png"
+ - src: "/images/gallery/mutsumi.png"
+ - src: "/images/gallery/egg.png"
+ - src: "/images/gallery/siesta.png"
 viewer : true
 viewerOptions : {
     title: false
