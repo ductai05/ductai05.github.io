@@ -164,10 +164,12 @@ params:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
       items:
-        - "C/C++, Python, JavaScript"
+        - "C/C++, Python"
         - "Keras/Tensorflow"
         - "Pandas, Numpy"
         - "Docker, Git"
+        - "Multi-Agents LLM"
+        - "Video-text Retrieval"
 
   # Experience
   experience:
