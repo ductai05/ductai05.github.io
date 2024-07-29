@@ -1,6 +1,6 @@
 baseURL: "https://ductai05.github.io"
 languageCode: "en-us"
-title: "DTblog"
+title: "DT blog"
 theme: hugo-profile
 
 outputs:
@@ -342,7 +342,7 @@ params:
 
   # List pages like blogs and posts
   listPages:
-    disableFeaturedImage: false
+    disableFeaturedImage: true
 
   # Single pages like blog and post
   singlePages:
