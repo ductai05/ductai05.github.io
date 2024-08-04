@@ -116,11 +116,11 @@ params:
     enableSeparator: false
     menus:
       disableAbout: false
-      disableExperience: false
+      disableExperience: true
       disableEducation: false
       disableProjects: false
       disableAchievements: false
-      disableContact: false
+      disableContact: true
 
   # Hero
   hero:
