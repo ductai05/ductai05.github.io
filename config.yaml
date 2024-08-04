@@ -222,7 +222,7 @@ params:
         featuredLink:
           enable: true
           name: "My academic record"
-          url: "https://leetcode.com/u/cieldt/"
+          url: "https://drive.google.com/drive/folders/1odOJG864xMkQcfR_sQORSmWxny3q1uhB"
       - title: "High School"
         school:
           name: "Bao Loc High School for Gifted."
@@ -230,10 +230,8 @@ params:
         date: "2020 - 2023"
         GPA: "9.0 / 10.0"
         content: |-
-          Learning in HSfG@BaoLoc:
-          - Math: Inequality Equations, Euclidean Geometry, Solid Geometry, Combination & Probability, Integral Calculus.
-
-          Extracurricular Activities:
+          Learning & Competitions - HSfG@BaoLoc:
+          - Math major: Inequality Equations, Euclidean Geometry, Solid Geometry, Combination & Probability, Integral Calculus.
           - First Prize in Mathematics, Provincial-level Excellent Students Contest Grade 12, Lam Dong 2023
           - 1012/1200, APT 2023 - VNUHCM.
         featuredLink:
