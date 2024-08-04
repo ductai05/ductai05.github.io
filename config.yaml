@@ -157,9 +157,9 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a student with a passion for AI and software. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and mathematics. I am currently studying at FIT@HCMUS - VNUHCM in Thu Duc, HCMC.
+      I am a student with a passion for AI and software. I have a background in computer science and mathematics. I am currently studying at FIT@HCMUS - VNUHCM in Thu Duc, HCMC.
 
-      I am currently working on project: Video Event Detection, AI Challenge HCMC.
+      I am currently working on project: Video Event Detection, AI Challenge HCMC 2024.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
@@ -235,6 +235,7 @@ params:
 
           Extracurricular Activities:
           - First Prize in Mathematics, Provincial-level Excellent Students Contest Grade 12, Lam Dong 2023
+          - 1012/1200, APT 2023 - VNUHCM.
         featuredLink:
           enable: true
           name: "My academic record"
