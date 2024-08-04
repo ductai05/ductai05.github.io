@@ -223,7 +223,7 @@ params:
           enable: true
           name: "My academic record"
           url: "https://drive.google.com/drive/folders/1odOJG864xMkQcfR_sQORSmWxny3q1uhB"
-      - title: "High School"
+      - title: "Specialized Math Student"
         school:
           name: "Bao Loc High School for Gifted."
           url: "https://www.facebook.com/ChuyenBaoLoc"
