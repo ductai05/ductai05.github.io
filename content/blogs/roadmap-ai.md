@@ -34,6 +34,8 @@ Các môn học:
 
 ![Đồ án Nhập môn lập trình](/images/blog/roadmap/nmlt.png "Đồ án Nhập môn lập trình")
 
+<figcaption>*Đồ án game Caro, Nhập môn lập trình.*</figcaption>
+
 ## Học kì 2
 
 Khác với các lớp CTT và CNTN ở FIT@HCMUS, lớp TNT không học Kĩ thuật lập trình mà thay vào đó là Lập trình cho trí tuệ nhân tạo. Môn này chủ yếu dạy làm quen với Python và 2 thư viện phổ biến dùng trong KHDL & TTNT là Numpy và Pandas. Ngoài ra, sinh viên được tiếp cận với các nội dung của Kĩ thuật lập trình bằng Python như linked list, queue, stack. Điểm yếu lớn nhất là con trỏ - vì năm sau học CTDL-GT lại bằng C/C++.
@@ -54,6 +56,6 @@ Các môn học:
 ![Đồ án Game Python](/images/blog/roadmap/mazegame.png "Đồ án Game Python")
 
 <figure style="text-align: center; margin-bottom: 20px;">
-  <img src="/images/blog/roadmap/mazegame.png" alt="Đồ án Game Python" style="max-width: 80%; height: auto;">
+  <img src="/images/blog/roadmap/mazegame.png" alt="Đồ án Game Python" style="max-width: 100%; height: auto;">
   <figcaption style="font-size: 14px; color: #555;">Chú thích: Đây là một đồ án game được viết bằng Python.</figcaption>
 </figure>
