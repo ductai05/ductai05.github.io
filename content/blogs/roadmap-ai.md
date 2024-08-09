@@ -52,3 +52,8 @@ Các môn học:
 - Lịch sử Đảng CSVN
 
 ![Đồ án Game Python](/images/blog/roadmap/mazegame.png "Đồ án Game Python")
+
+<figure style="text-align: center; margin-bottom: 20px;">
+  <img src="/images/blog/roadmap/mazegame.png" alt="Đồ án Game Python" style="max-width: 80%; height: auto;">
+  <figcaption style="font-size: 14px; color: #555;">Chú thích: Đây là một đồ án game được viết bằng Python.</figcaption>
+</figure>
