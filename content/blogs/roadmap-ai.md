@@ -8,7 +8,7 @@ tags:
   - Roadmap
   - AI
   - FIT@HCMUS
-image: /images/blog/roadmap.png 
+image: /images/blog/roadmap/roadmap.png 
 description: "Learning AI at FIT@HCMUS"
 toc: 
 ---
@@ -32,6 +32,8 @@ Các môn học:
 - Vi tích phân 1B
 - Toán rời rạc
 
+![Đồ án Nhập môn lập trình](/images/blog/roadmap/nmlt.png "Đồ án Nhập môn lập trình")
+
 ## Học kì 2
 
 Khác với các lớp CTT và CNTN ở FIT@HCMUS, lớp TNT không học Kĩ thuật lập trình mà thay vào đó là Lập trình cho trí tuệ nhân tạo. Môn này chủ yếu dạy làm quen với Python và 2 thư viện phổ biến dùng trong KHDL & TTNT là Numpy và Pandas. Ngoài ra, sinh viên được tiếp cận với các nội dung của Kĩ thuật lập trình bằng Python như linked list, queue, stack. Điểm yếu lớn nhất là con trỏ - vì năm sau học CTDL-GT lại bằng C/C++.
@@ -49,4 +51,4 @@ Các môn học:
 - Kinh tế chính trị Mác - Lênin
 - Lịch sử Đảng CSVN
 
-![Hình minh họa](/images/gallery/cuteg.png "test ảnh")
+![Đồ án Game Python](/images/blog/roadmap/mazegame.png "Đồ án Game Python")
