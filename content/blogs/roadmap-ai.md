@@ -32,9 +32,11 @@ Các môn học:
 - Vi tích phân 1B
 - Toán rời rạc
 
-![Đồ án Nhập môn lập trình](/images/blog/roadmap/nmlt.png "Đồ án Nhập môn lập trình")
+<figure style="text-align: center; margin-bottom: 20px;">
+  <img src="/images/blog/roadmap/nmlt.png" alt="Đồ án Nhập môn lập trình" style="max-width: 90%; height: auto;">
+  <figcaption style="font-size: 14px; color: #555;">Đồ án game Caro, Nhập môn lập trình.</figcaption>
+</figure>
 
-<figcaption>*Đồ án game Caro, Nhập môn lập trình.*</figcaption>
 
 ## Học kì 2
 
@@ -53,9 +55,7 @@ Các môn học:
 - Kinh tế chính trị Mác - Lênin
 - Lịch sử Đảng CSVN
 
-![Đồ án Game Python](/images/blog/roadmap/mazegame.png "Đồ án Game Python")
-
 <figure style="text-align: center; margin-bottom: 20px;">
-  <img src="/images/blog/roadmap/mazegame.png" alt="Đồ án Game Python" style="max-width: 100%; height: auto;">
+  <img src="/images/blog/roadmap/mazegame.png" alt="Đồ án Game Python" style="max-width: 90%; height: auto;">
   <figcaption style="font-size: 14px; color: #555;">Chú thích: Đây là một đồ án game được viết bằng Python.</figcaption>
 </figure>
