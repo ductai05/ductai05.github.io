@@ -57,5 +57,5 @@ Các môn học:
 
 <figure style="text-align: center; margin-bottom: 20px;">
   <img src="/images/blog/roadmap/mazegame.png" alt="Đồ án Game Python" style="max-width: 90%; height: auto;">
-  <figcaption style="font-size: 14px; color: #555;">Chú thích: Đây là một đồ án game được viết bằng Python.</figcaption>
+  <figcaption style="font-size: 14px; color: #555;">Đồ án game Maze, Lập trình cho AI (Python).</figcaption>
 </figure>
