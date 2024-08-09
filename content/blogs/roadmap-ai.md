@@ -49,3 +49,4 @@ Các môn học:
 - Kinh tế chính trị Mác - Lênin
 - Lịch sử Đảng CSVN
 
+![Hình minh họa](/images/gallery/cuteg.png "test ảnh")
