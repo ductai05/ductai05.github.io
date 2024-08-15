@@ -7,8 +7,8 @@ layout: "gallery"
 galleryImages:
 - src: "/images/gallery/blhsfg2.png"
 - src: "/images/gallery/pingu.png"
-- src: "/images/gallery/roadmap.png"
 - src: "/images/gallery/mutsumi.png"
+- src: "/images/gallery/roadmap.png"
 viewer : true
 viewerOptions : {
     title: true
