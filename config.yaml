@@ -148,7 +148,7 @@ params:
         - icon: fab fa-linkedin
           url: https://linkedin.com/in/ductai05
       customIcons:
-        - icon: /images/leetcode.png
+        - icon: /images/profile/leetcode.png
           url: "https://leetcode.com/u/cieldt/"
 
   # About
@@ -210,7 +210,7 @@ params:
           name: "University of Science, VNU-HCM"
           url: "https://en.hcmus.edu.vn/"
         date: "2023 - 2026"
-        GPA: "8.4 / 10.0"
+        GPA: "3.88/4.00 (first-year)"
         content: |-
           Learning in FIT@HCMUS:
           - Math: Calculus, Linear Algebra, Discrete Math, Prob&Stat, Combi. Math, Math4AI, Linear Prog.

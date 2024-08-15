@@ -5,9 +5,10 @@ draft: false
 description: "My gallery :earth_asia:"
 layout: "gallery"
 galleryImages:
-- src: "/images/gallery/mutsumi.png"
-- src: "/images/gallery/blhsfg.png"
+- src: "/images/gallery/blhsfg2.png"
 - src: "/images/gallery/pingu.png"
+- src: "/images/gallery/roadmap.png"
+- src: "/images/gallery/mutsumi.png"
 viewer : true
 viewerOptions : {
     title: true
