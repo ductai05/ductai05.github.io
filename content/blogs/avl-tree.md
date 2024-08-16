@@ -158,3 +158,24 @@ void printTree(node *t){
 }
 
 {{< /highlight >}}
+
+#### Đếm số lá của cây
+
+Ta có thể sử dụng đệ quy để đếm số lá của cây. Gọi hàm đếm này là countLeafNode(t)
+- Nếu t rỗng thì <mark>countLeafNode(t) = 0</mark>
+- Nếu t là một nút lá thì <mark>countLeafNode(n) = 1</mark>
+- Các trường hợp còn lại thì trả <mark>countLeafNode(t->left) + countLeafNode(t->right)</mark>
+
+{{< highlight cpp >}}
+
+bool isLeafNode(node *l){
+  return (l->left == NULL && l->right == NULL);
+}
+
+int countLeafNode(node *t){
+  if (t == NULL) return 0;
+  if (isLeafNode(t)) return 1;
+  return countLeafNode(t->left) + countLeafNode(t->right);
+}
+
+{{< /highlight >}}
