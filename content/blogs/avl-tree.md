@@ -18,13 +18,13 @@ toc:
   <figcaption style="font-size: 14px; color: #555;">Đồ án game Caro, Nhập môn lập trình.</figcaption>
 </figure>
 
-# CTDL Cây
+## CTDL Cây
 
 **Cấu trúc dữ liệu cây** biểu diễn các **nút (node)** được kết nối bởi các cạnh. Chúng ta sẽ tìm hiểu về **Cây nhị phân (Binary Tree)**, **Cây tìm kiếm nhị phân (Binary Search Tree)** và **Cây AVL** trong bài viết này.
 
 **Cây nhị phân** là một cấu trúc dữ liệu đặc biệt được sử dụng cho mục đích lưu trữ dữ liệu. Một cây nhị phân có một điều kiện đặc biệt là mỗi nút có thể có **tối đa hai nút con**. Một cây nhị phân tận dụng lợi thế của hai kiểu cấu trúc dữ liệu: một mảng đã sắp thứ tự và một danh sách liên kết (Linked List), do đó việc tìm kiếm sẽ nhanh như trong mảng đã sắp thứ tự và các thao tác chèn và xóa cũng sẽ nhanh bằng trong Linked List.
 
-## Khái niệm
+### Khái niệm
 
 Một số khái niệm quan trọng liên quan đến cây nhị phân: 
 
@@ -38,3 +38,11 @@ Một số khái niệm quan trọng liên quan đến cây nhị phân:
 - **Duyệt**: duyệt qua các nút theo một thứ tự nào đó.
 - **Bậc**: bậc của một nút biểu diễn số con của một nút. Nếu nút gốc có bậc là 0, thì nút con tiếp theo sẽ có bậc là 1, và nút cháu của nó sẽ có bậc là 2, …
 - **Khóa (Key)**: biểu diễn một giá trị của một nút dựa trên những gì mà một thao tác tìm kiếm thực hiện trên nút.
+
+{{< highlight cpp >}}
+
+int main(){
+  return 1;
+}
+
+{{< /highlight >}}
