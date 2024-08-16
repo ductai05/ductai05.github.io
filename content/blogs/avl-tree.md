@@ -93,6 +93,30 @@ Nếu một cây nhị phân được duyệt trung thứ tự, kết quả tạ
   <figcaption style="font-size: 14px; color: #555;">In-order Traversal - Duyệt trung thứ tự</figcaption>
 </figure>
 
+Ở hình ví dụ minh họa trên, **A** là nút gốc. Với phương thức duyệt trung thứ tự, chúng ta bắt đầu từ nút gốc **A**, di chuyển tới cây con bên trái **B** của nút gốc. Tại đây, **B** cũng được duyệt theo cách thức duyệt trung thứ tự. Và tiến trình tiếp tục cho đến khi tất cả các nút đã được truy cập. Kết quả của cách thức duyệt trung thứ tự cho cây trên sẽ là:
+
+**D → B → E → A → F → C → G**
+
+{{< highlight cpp >}}
+
+void printTree(node *t){
+  if (t != NULL){
+    printTree(t->left);
+    cout << t->data << " " ;
+    printTree(t->right);
+  }
+}
+
+{{< /highlight >}}
+
+##### Duyệt tiền thứ tự
+
+Trong cách thức duyệt tiền thứ tự trong cây nhị phân, nút gốc được duyệt đầu tiên, sau đó sẽ duyệt cây con bên trái và cuối cùng sẽ duyệt cây con bên phải.
+
+<figure style="text-align: center; margin-bottom: 20px;">
+  <img src="/images/blog/avl-tree/In-order Traversal.png" alt="Pre-order Traversal - Duyệt tiền thứ tự" style="max-width: 90%; height: auto;">
+  <figcaption style="font-size: 14px; color: #555;"> Pre-order Traversal - Duyệt tiền thứ tự </figcaption>
+</figure>
 
 Ở hình ví dụ minh họa trên, **A** là nút gốc. Chúng ta bắt đầu từ **A**, và theo cách thức duyệt tiền thứ tự, đầu tiên chúng ta truy cập chính nút gốc **A** này và sau đó di chuyển tới nút con bên trái **B** của nó. **B** cũng được duyệt theo cách thức duyệt tiền thứ tự. Và tiến trình tiếp tục cho tới khi tất cả các nút đều đã được truy cập. Kết quả của cách thức duyệt tiền thứ tự cây này sẽ là:
 
@@ -121,7 +145,7 @@ Trong cách thức duyệt hậu thứ tự trong cây nhị phân, nút gốc c
 
 Ở hình ví dụ minh họa trên, **A** là nút gốc. Chúng ta bắt đầu từ **A**, và theo cách duyệt hậu thứ tự, đầu tiên chúng ta truy cập cây con bên trái **B**. **B** cũng được duyệt theo cách thứ duyệt hậu thứ tự. Và tiến trình sẽ tiếp tục tới khi tất cả các nút đã được truy cập. Kết quả của cách thức duyệt hậu thứ tự của cây con trên sẽ là:
 
-**A → B → D → E → C → F → G**
+**D → E → B → F → G → C → A**
 
 {{< highlight cpp >}}
 
