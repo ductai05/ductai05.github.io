@@ -55,6 +55,8 @@ struct node {
 
 {{< /highlight >}}
 
+#### Thêm phần tử
+
 Các hoạt động thêm sửa xóa cũng tương tự như linker list.
 Để thêm phần tử vào cây nhị phân tìm kiếm ta làm như sau:
 
@@ -71,13 +73,22 @@ node *insert(node *t, int x){
     temp->left = NULL;
     temp->right = NULL;
     return temp;
-  } else{
-    if (x < t->data){
-      t->left = insert(t->left, x);
-    } else{
-      t->right = insert(t->right, x);
-    }
+  } else {
+    if (x < t->data) t->left = insert(t->left, x);
+    else t->right = insert(t->right, x);
   }
 }
 
 {{< /highlight >}}
+
+#### Duyệt cây
+
+Duyệt cây là một tiến trình để truy cập tất cả các nút của một cây và cũng có thể in các giá trị của các nút này. Bởi vì tất cả các nút được kết nối thông qua các cạnh (hoặc các link), nên chúng ta luôn luôn bắt đầu truy cập từ nút gốc. Do đó, chúng ta không thể truy cập ngẫu nhiên bất kỳ nút nào trong cây. Có ba phương thức mà chúng ta có thể sử dụng để duyệt một cây:
+
+- Duyệt tiền thứ tự (Pre-order Traversal)
+- Duyệt trung thứ tự (In-order Traversal)
+- Duyệt hậu thứ tự (Post-order Traversal)
+
+##### Duyệt trung thứ tự
+
+Nếu một cây nhị phân được duyệt trung thứ tự, kết quả tạo ra sẽ là các giá trị khóa được sắp xếp theo thứ tự tăng dần.
