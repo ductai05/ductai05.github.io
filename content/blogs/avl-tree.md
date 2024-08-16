@@ -54,3 +54,30 @@ struct node {
 };
 
 {{< /highlight >}}
+
+Các hoạt động thêm sửa xóa cũng tương tự như linker list.
+Để thêm phần tử vào cây nhị phân tìm kiếm ta làm như sau:
+
+- Nếu cây đang rỗng, thì chọn luôn phần tử thêm vào làm node gốc.
+- Nếu cây khác rỗng:
+  - Nếu data của node lớn hơn phần tử thêm vào, thì gọi hàm đệ quy để thêm phần tử đó và node left và ngược lại.
+
+{{< highlight cpp >}}
+
+node *insert(node *t, int x){
+  if (t == NULL){
+    node *temp = new node;
+    temp->data =x;
+    temp->left = NULL;
+    temp->right = NULL;
+    return temp;
+  } else{
+    if (x < t->data){
+      t->left = insert(t->left, x);
+    } else{
+      t->right = insert(t->right, x);
+    }
+  }
+}
+
+{{< /highlight >}}
