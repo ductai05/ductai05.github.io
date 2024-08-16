@@ -39,10 +39,18 @@ Một số khái niệm quan trọng liên quan đến cây nhị phân:
 - **Bậc**: bậc của một nút biểu diễn số con của một nút. Nếu nút gốc có bậc là 0, thì nút con tiếp theo sẽ có bậc là 1, và nút cháu của nó sẽ có bậc là 2, …
 - **Khóa (Key)**: biểu diễn một giá trị của một nút dựa trên những gì mà một thao tác tìm kiếm thực hiện trên nút.
 
+#### Biểu diễn cây tìm kiếm nhị phân
+
+Cây tìm kiếm nhị phân biểu diễn một hành vi đặc biệt. Con bên trái của một nút phải có giá trị nhỏ hơn giá trị của nút cha (của nút con này) và con bên phải của nút phải có giá trị lớn hơn giá trị của nút cha (của nút con này).
+
+Khai báo một node trong của cây:
+
 {{< highlight cpp >}}
 
-int main(){
-  return 1;
-}
+struct node {
+  int data;
+  node *left;
+  node *right;
+};
 
 {{< /highlight >}}
