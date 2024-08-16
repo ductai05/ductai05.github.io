@@ -13,18 +13,13 @@ description: "Cấu trúc dữ liệu: Cây AVL"
 toc: 
 ---
 
-<figure style="text-align: center; margin-bottom: 20px;">
-  <img src="/images/blog/roadmap/nmlt.png" alt="Đồ án Nhập môn lập trình" style="max-width: 90%; height: auto;">
-  <figcaption style="font-size: 14px; color: #555;">Đồ án game Caro, Nhập môn lập trình.</figcaption>
-</figure>
-
-## CTDL Cây
+## 1. CTDL Cây
 
 **Cấu trúc dữ liệu cây** biểu diễn các **nút (node)** được kết nối bởi các cạnh. Chúng ta sẽ tìm hiểu về **Cây nhị phân (Binary Tree)**, **Cây tìm kiếm nhị phân (Binary Search Tree)** và **Cây AVL** trong bài viết này.
 
 **Cây nhị phân** là một cấu trúc dữ liệu đặc biệt được sử dụng cho mục đích lưu trữ dữ liệu. Một cây nhị phân có một điều kiện đặc biệt là mỗi nút có thể có **tối đa hai nút con**. Một cây nhị phân tận dụng lợi thế của hai kiểu cấu trúc dữ liệu: một mảng đã sắp thứ tự và một danh sách liên kết (Linked List), do đó việc tìm kiếm sẽ nhanh như trong mảng đã sắp thứ tự và các thao tác chèn và xóa cũng sẽ nhanh bằng trong Linked List.
 
-### Khái niệm
+### 1.1 Khái niệm
 
 Một số khái niệm quan trọng liên quan đến cây nhị phân: 
 
@@ -92,3 +87,25 @@ Duyệt cây là một tiến trình để truy cập tất cả các nút của
 ##### Duyệt trung thứ tự
 
 Nếu một cây nhị phân được duyệt trung thứ tự, kết quả tạo ra sẽ là các giá trị khóa được sắp xếp theo thứ tự tăng dần.
+
+<figure style="text-align: center; margin-bottom: 20px;">
+  <img src="/images/blog/avl-tree/In-order Traversal.png" alt="In-order Traversal - Duyệt trung thứ tự" style="max-width: 90%; height: auto;">
+  <figcaption style="font-size: 14px; color: #555;">In-order Traversal - Duyệt trung thứ tự</figcaption>
+</figure>
+
+
+Ở hình ví dụ minh họa trên, **A** là nút gốc. Chúng ta bắt đầu từ **A**, và theo cách thức duyệt tiền thứ tự, đầu tiên chúng ta truy cập chính nút gốc **A** này và sau đó di chuyển tới nút con bên trái **B** của nó. **B** cũng được duyệt theo cách thức duyệt tiền thứ tự. Và tiến trình tiếp tục cho tới khi tất cả các nút đều đã được truy cập. Kết quả của cách thức duyệt tiền thứ tự cây này sẽ là:
+
+**A → B → D → E → C → F → G.**
+
+{{< highlight cpp >}}
+
+void printTree(node *t){
+  if (t != NULL){
+    cout << t->data << " " ;
+    printTree(t->left);
+    printTree(t->right);
+  }
+}
+
+{{< /highlight >}}
