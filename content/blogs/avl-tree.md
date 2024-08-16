@@ -89,7 +89,7 @@ Duyệt cây là một tiến trình để truy cập tất cả các nút của
 Nếu một cây nhị phân được duyệt trung thứ tự, kết quả tạo ra sẽ là các giá trị khóa được sắp xếp theo thứ tự tăng dần.
 
 <figure style="text-align: center; margin-bottom: 20px;">
-  <img src="/images/blog/avl-tree/In-order Traversal.png" alt="In-order Traversal - Duyệt trung thứ tự" style="max-width: 90%; height: auto;">
+  <img src="/images/blog/avl-tree/traversal.png" alt="In-order Traversal - Duyệt trung thứ tự" style="max-width: 90%; height: auto;">
   <figcaption style="font-size: 14px; color: #555;">In-order Traversal - Duyệt trung thứ tự</figcaption>
 </figure>
 
@@ -114,7 +114,7 @@ void printTree(node *t){
 Trong cách thức duyệt tiền thứ tự trong cây nhị phân, nút gốc được duyệt đầu tiên, sau đó sẽ duyệt cây con bên trái và cuối cùng sẽ duyệt cây con bên phải.
 
 <figure style="text-align: center; margin-bottom: 20px;">
-  <img src="/images/blog/avl-tree/In-order Traversal.png" alt="Pre-order Traversal - Duyệt tiền thứ tự" style="max-width: 90%; height: auto;">
+  <img src="/images/blog/avl-tree/traversal.png" alt="Pre-order Traversal - Duyệt tiền thứ tự" style="max-width: 90%; height: auto;">
   <figcaption style="font-size: 14px; color: #555;"> Pre-order Traversal - Duyệt tiền thứ tự </figcaption>
 </figure>
 
@@ -139,7 +139,7 @@ void printTree(node *t){
 Trong cách thức duyệt hậu thứ tự trong cây nhị phân, nút gốc của cây sẽ được truy cập cuối cùng, do đó bạn cần chú ý. Đầu tiên, chúng ta duyệt cây con bên trái, sau đó sẽ duyệt cây con bên phải và cuối cùng là duyệt nút gốc.
 
 <figure style="text-align: center; margin-bottom: 20px;">
-  <img src="/images/blog/avl-tree/In-order Traversal.png" alt="Post-order Traversal - Duyệt hậu thứ tự" style="max-width: 90%; height: auto;">
+  <img src="/images/blog/avl-tree/traversal.png" alt="Post-order Traversal - Duyệt hậu thứ tự" style="max-width: 90%; height: auto;">
   <figcaption style="font-size: 14px; color: #555;"> Post-order Traversal - Duyệt hậu thứ tự </figcaption>
 </figure>
 
@@ -161,10 +161,10 @@ void printTree(node *t){
 
 #### Đếm số lá của cây
 
-Ta có thể sử dụng đệ quy để đếm số lá của cây. Gọi hàm đếm này là countLeafNode(t)
+Ta có thể sử dụng đệ quy để đếm số lá của cây. Gọi hàm đếm này là <mark>countLeafNode(t)</mark>
 - Nếu t rỗng thì <mark>countLeafNode(t) = 0</mark>
 - Nếu t là một nút lá thì <mark>countLeafNode(n) = 1</mark>
-- Các trường hợp còn lại thì trả <mark>countLeafNode(t->left) + countLeafNode(t->right)</mark>
+- Các trường hợp còn lại thì trả về <mark>countLeafNode(t->left) + countLeafNode(t->right)</mark>
 
 {{< highlight cpp >}}
 
@@ -179,3 +179,21 @@ int countLeafNode(node *t){
 }
 
 {{< /highlight >}}
+
+#### Bậc của cây
+
+<figure style="text-align: center; margin-bottom: 20px;">
+  <img src="/images/blog/avl-tree/tree-level.png" alt="Bậc của cây" style="max-width: 90%; height: auto;">
+  <figcaption style="font-size: 14px; color: #555;"> Bậc của cây </figcaption>
+</figure>
+
+Bậc cho biết khoảng cách từ nút gốc đến nút cụ thể trong cây. Nút gốc có bậc 0, các nút con của nó có bậc 1, và cứ tiếp tục như vậy...
+
+Ta có thể sử dụng đệ quy để tính bậc của cây. Gọi hàm này là <mark>treeLevel(t)</mark>
+
+- Nếu t rỗng <mark>treeLevel(t) = -1</mark>
+- Nếu t là một lá thì <mark>treeLevel(t) = 0</mark>
+- Trường hợp còn lại thì <mark>treeLevel(t) = 1 + max(treeLevel(t->left), treeLevel(t->right))</mark>
+
+
+
