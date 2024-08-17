@@ -34,7 +34,7 @@ Một số khái niệm quan trọng liên quan đến cây nhị phân:
 - **Bậc**: bậc của một nút biểu diễn số con của một nút. Nếu nút gốc có bậc là 0, thì nút con tiếp theo sẽ có bậc là 1, và nút cháu của nó sẽ có bậc là 2, …
 - **Khóa (Key)**: biểu diễn một giá trị của một nút dựa trên những gì mà một thao tác tìm kiếm thực hiện trên nút.
 
-#### Biểu diễn cây tìm kiếm nhị phân
+## 2. Cây tìm kiếm nhị phân 
 
 Cây tìm kiếm nhị phân biểu diễn một hành vi đặc biệt. Con bên trái của một nút phải có giá trị nhỏ hơn giá trị của nút cha (của nút con này) và con bên phải của nút phải có giá trị lớn hơn giá trị của nút cha (của nút con này).
 
@@ -50,7 +50,7 @@ struct node {
 
 {{< /highlight >}}
 
-#### Thêm phần tử
+### 2.1 Thêm phần tử
 
 Các hoạt động thêm sửa xóa cũng tương tự như linker list.
 Để thêm phần tử vào cây nhị phân tìm kiếm ta làm như sau:
@@ -76,7 +76,7 @@ node *insert(node *t, int x){
 
 {{< /highlight >}}
 
-#### Duyệt cây
+### 2.2 Duyệt cây
 
 Duyệt cây là một tiến trình để truy cập tất cả các nút của một cây và cũng có thể in các giá trị của các nút này. Bởi vì tất cả các nút được kết nối thông qua các cạnh (hoặc các link), nên chúng ta luôn luôn bắt đầu truy cập từ nút gốc. Do đó, chúng ta không thể truy cập ngẫu nhiên bất kỳ nút nào trong cây. Có ba phương thức mà chúng ta có thể sử dụng để duyệt một cây:
 
@@ -84,7 +84,7 @@ Duyệt cây là một tiến trình để truy cập tất cả các nút của
 - Duyệt trung thứ tự (In-order Traversal)
 - Duyệt hậu thứ tự (Post-order Traversal)
 
-##### Duyệt trung thứ tự
+#### 2.2.1 Duyệt trung thứ tự
 
 Nếu một cây nhị phân được duyệt trung thứ tự, kết quả tạo ra sẽ là các giá trị khóa được sắp xếp theo thứ tự tăng dần.
 
@@ -109,7 +109,7 @@ void printTree(node *t){
 
 {{< /highlight >}}
 
-##### Duyệt tiền thứ tự
+#### 2.2.2 Duyệt tiền thứ tự
 
 Trong cách thức duyệt tiền thứ tự trong cây nhị phân, nút gốc được duyệt đầu tiên, sau đó sẽ duyệt cây con bên trái và cuối cùng sẽ duyệt cây con bên phải.
 
@@ -134,7 +134,7 @@ void printTree(node *t){
 
 {{< /highlight >}}
 
-##### Duyệt hậu thứ tự
+#### 2.2.3 Duyệt hậu thứ tự
 
 Trong cách thức duyệt hậu thứ tự trong cây nhị phân, nút gốc của cây sẽ được truy cập cuối cùng, do đó bạn cần chú ý. Đầu tiên, chúng ta duyệt cây con bên trái, sau đó sẽ duyệt cây con bên phải và cuối cùng là duyệt nút gốc.
 
@@ -159,7 +159,7 @@ void printTree(node *t){
 
 {{< /highlight >}}
 
-#### Đếm số lá của cây
+### 2.3 Đếm số lá của cây
 
 Ta có thể sử dụng đệ quy để đếm số lá của cây. Gọi hàm đếm này là <mark>countLeafNode(t)</mark>
 - Nếu t rỗng thì <mark>countLeafNode(t) = 0</mark>
@@ -171,7 +171,6 @@ Ta có thể sử dụng đệ quy để đếm số lá của cây. Gọi hàm 
 bool isLeafNode(node *l){
   return (l->left == NULL && l->right == NULL);
 }
-
 int countLeafNode(node *t){
   if (t == NULL) return 0;
   if (isLeafNode(t)) return 1;
@@ -180,7 +179,7 @@ int countLeafNode(node *t){
 
 {{< /highlight >}}
 
-#### Bậc của cây
+### 2.4 Bậc của cây
 
 <figure style="text-align: center; margin-bottom: 20px;">
   <img src="/images/blog/avl-tree/tree-level.png" alt="Bậc của cây" style="max-width: 90%; height: auto;">
@@ -195,5 +194,39 @@ Ta có thể sử dụng đệ quy để tính bậc của cây. Gọi hàm này
 - Nếu t là một lá thì <mark>treeLevel(t) = 0</mark>
 - Trường hợp còn lại thì <mark>treeLevel(t) = 1 + max(treeLevel(t->left), treeLevel(t->right))</mark>
 
+{{< highlight cpp >}}
 
+bool isLeafNode(node *l){
+  return (l->left == NULL && l->right == NULL);
+}
+int treeLevel(node *t){
+  if (t == NULL) return -1;
+  return 1 + max(treeLevel(t->left), treeLevel(t->right));
+}
 
+{{< /highlight >}}
+
+## 3. Cây AVL
+
+Hiệu suất trường hợp xấu nhất của cây tìm kiếm nhị phân **(BST)** gần với các giải thuật tìm kiếm tuyến tính, tức là **Ο(n)**. Với dữ liệu thời gian thực, chúng ta không thể dự đoán mẫu dữ liệu và các tần số của nó. Vì thế, điều cần thiết phát sinh ở đây là để cân bằng cây tìm kiếm nhị phân đang tồn tại.
+
+**Cây AVL** (viết tắt của tên các nhà phát minh **A**delson, **V**elski và **L**andis) là cây tìm kiếm nhị phân có độ cân bằng cao. Cây AVL kiểm tra độ cao (bậc) của các cây con bên trái và cây con bên phải và bảo đảm rằng hiệu số giữa chúng là không lớn hơn **1**. Hiệu số này được gọi là **Balance Factor (Nhân tố cân bằng)**.
+
+<mark>BF(X) := Height(RightSubtree(X)) - Height(LeftSubtree(X)); abs(BF(X)) <= 1</mark>
+
+Hình ảnh ví dụ của cây AVL:
+
+<figure style="text-align: center; margin-bottom: 20px;">
+  <img src="/images/blog/avl-tree/avl-tree2.png" alt="Cây AVL với nhân tố cân bằng" style="max-width: 90%; height: auto;">
+  <figcaption style="font-size: 14px; color: #555;"> Cây AVL với nhân tố cân bằng </figcaption>
+</figure>
+
+{{< highlight cpp >}}
+
+bool checkAvl(node *t){
+  if (t == NULL)  return true;
+  if (abs(treeLevel(t->left) - treeLevel(t->right)) > 1) return false;
+  return checkAvl(t->left) && checkAvl(t->right);
+}
+
+{{< /highlight >}}
