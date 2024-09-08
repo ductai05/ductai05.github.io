@@ -210,7 +210,11 @@ int treeLevel(node *t){
 
 Hiệu suất trường hợp xấu nhất của cây tìm kiếm nhị phân **(BST)** gần với các giải thuật tìm kiếm tuyến tính, tức là **Ο(n)**. Với dữ liệu thời gian thực, chúng ta không thể dự đoán mẫu dữ liệu và các tần số của nó. Vì thế, điều cần thiết phát sinh ở đây là để cân bằng cây tìm kiếm nhị phân đang tồn tại.
 
-**Cây AVL** (viết tắt của tên các nhà phát minh **A**delson, **V**elski và **L**andis) là cây tìm kiếm nhị phân có độ cân bằng cao. Cây AVL kiểm tra độ cao (bậc) của các cây con bên trái và cây con bên phải và bảo đảm rằng hiệu số giữa chúng là không lớn hơn **1**. Hiệu số này được gọi là **Balance Factor (Nhân tố cân bằng)**.
+**Cây AVL** (viết tắt của tên các nhà phát minh **A**delson, **V**elski và **L**andis) là cây tìm kiếm nhị phân có độ cân bằng cao. Các hành vi tìm kiếm, thêm hoặc xóa có độ phức tạp là **O(log n)** trong các trường hợp trung bình và trường hợp tệ nhất. 
+
+### 3.1 Kiểm tra cây AVL
+
+Cây AVL kiểm tra độ cao (bậc) của các cây con bên trái và cây con bên phải và bảo đảm rằng hiệu số giữa chúng là không lớn hơn **1**. Hiệu số này được gọi là **Balance Factor (Nhân tố cân bằng)**.
 
 <mark>BF(X) := Height(RightSubtree(X)) - Height(LeftSubtree(X)); abs(BF(X)) <= 1</mark>
 
@@ -224,9 +228,23 @@ Hình ảnh ví dụ của cây AVL:
 {{< highlight cpp >}}
 
 bool checkAvl(node *t){
-  if (t == NULL)  return true;
+  if (t == NULL) return true;
   if (abs(treeLevel(t->left) - treeLevel(t->right)) > 1) return false;
   return checkAvl(t->left) && checkAvl(t->right);
 }
 
 {{< /highlight >}}
+
+### 3.2 Các kĩ thuật xoay cây AVL
+
+Với những cây nhị phân tìm kiếm, nhiều cây sẽ rơi vào trường hợp rất xấu, trường hợp xấu nhất là tất cả các node cha chỉ có một node con, việc tìm kiếm trên cây này có ĐPT là **O(n)**, lúc đó cây này không khác biệt mấy so với một danh sách liên kết.
+
+Để tránh trường hợp trên chúng ta phải biết những cách xoay cây ở trong cây nhị phân tìm kiếm.
+
+#### 3.2.1 Kĩ thuật xoay phải
+
+Kỹ thuật này thường áp dụng cho những cây nhị phần tìm kiếm bị lệch về bên trái (độ cao của cây con trái lớn hơn độ của của cây con phải). 
+
+#### 3.2.2 Kĩ thuật xoay trái
+
+Kỹ thuật này thường áp dụng cho những cây nhị phần tìm kiếm bị lệch về bên phải(độ cao của cây con phải lớn hơn độ của của cây con trái)

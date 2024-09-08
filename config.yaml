@@ -159,7 +159,7 @@ params:
     content: |-
       I am a student with a passion for AI and software. I have a background in computer science and mathematics. I am currently studying at FIT@HCMUS - VNUHCM in Thu Duc, HCMC.
 
-      I am currently working on project: Video Event Detection, AI Challenge HCMC 2024.
+      I am currently working on project: Video-text Retrieval (Team WATLERE - AI23@HCMUS), AI Challenge HCMC 2024.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
