@@ -47,7 +47,7 @@ Courses:
 - Environmental Science
 - Introduction to Law
 - Marxist-Leninist Political Economics
-- LHistory of Vietnamese Communist Party
+- History of Vietnamese Communist Party
 
 <figure style="text-align: center; margin-bottom: 20px;">
   <img src="/images/blog/roadmap/mazegame.png" alt="Project game Maze" style="max-width: 90%; height: auto;">
