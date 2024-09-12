@@ -1,5 +1,5 @@
 ---
-title: "My AI Roadmap"
+title: "DucTai's AI Roadmap"
 date: 2024-07-29T15:36:24+07:00
 draft: false
 # github_link: "https://github.com/gurusabarish/hugo-profile"
@@ -13,49 +13,43 @@ description: "Learning AI at FIT@HCMUS"
 toc: 
 ---
 
-Học TTNT ở FIT@HCMUS...
+AI23 - FIT@HCMUS, VNUHCM.
 
-  1. Đại cương: Lý luận chính trị, toán học, khoa học tự nhiên
-  2. Cơ sở ngành: DSA, OOP, Mạng máy tính, ...
-  3. Chuyên ngành.
+This is my simple [Roadmap](https://roadmap.sh/r/ai-hcmus)
 
-Đây là [Roadmap](https://roadmap.sh/r/ai-hcmus) mình viết đơn giản, dựa trên các môn học theo từng học kì. 
+## Semester 1
 
-## Học kì 1
+I love 3T & Introduction to Programming, aLongg_timenosee & Introduction to AI.
 
-Khó khăn nhất là Nhập môn lập trình =)) tuy kiến thức không phải quá nặng nhưng những câu hỏi trong đề thi thật là oái ăm. Ngoài ra còn là khoảng thời gian chạy đồ án liên miên với môn giới thiệu ngành TTNT.
+Courses:
 
-Các môn học:
-
-- Nhập môn lập trình
-- Giới thiệu ngành trí tuệ nhân tạo
-- Vi tích phân 1B
-- Toán rời rạc
+- NIntroduction to Programming
+- Introduction to AI
+- Calculus 1B
+- Discrete Mathematics
 
 <figure style="text-align: center; margin-bottom: 20px;">
-  <img src="/images/blog/roadmap/nmlt.png" alt="Đồ án Nhập môn lập trình" style="max-width: 90%; height: auto;">
-  <figcaption style="font-size: 14px; color: #555;">Đồ án game Caro, Nhập môn lập trình.</figcaption>
+  <img src="/images/blog/roadmap/nmlt.png" alt="Project game Caro" style="max-width: 90%; height: auto;">
+  <figcaption style="font-size: 14px; color: #555;">Project game Caro, Intro2Prog.</figcaption>
 </figure>
 
 
-## Học kì 2
+## Semester 2
 
-Khác với các lớp CTT và CNTN ở FIT@HCMUS, lớp TNT không học Kĩ thuật lập trình mà thay vào đó là Lập trình cho trí tuệ nhân tạo. Môn này chủ yếu dạy làm quen với Python và 2 thư viện phổ biến dùng trong KHDL & TTNT là Numpy và Pandas. Ngoài ra, sinh viên được tiếp cận với các nội dung của Kĩ thuật lập trình bằng Python như linked list, queue, stack. Điểm yếu lớn nhất là con trỏ - vì năm sau học CTDL-GT lại bằng C/C++.
+I love TungLExDMingVQA & Python, Pandas, Numpy, Linked List, Queue, Stack, ... (but not pointer).
 
-Vì chỉ có một môn Cơ sở ngành nên mình chọn thêm các môn đại cương khác để học.
+Courses:
 
-Các môn học:
-
-- Lập trình cho TTNT
-- Vi tích phân 2B
-- Đại số tuyến tính
-- Vật lý đại cương 1
-- Môi trường đại cương
-- Pháp luật đại cương
-- Kinh tế chính trị Mác - Lênin
-- Lịch sử Đảng CSVN
+- Introduction to Programming for AI
+- Calculus 2B
+- Linear Algebra
+- General Physics 1
+- Environmental Science
+- Introduction to Law
+- Marxist-Leninist Political Economics
+- LHistory of Vietnamese Communist Party
 
 <figure style="text-align: center; margin-bottom: 20px;">
-  <img src="/images/blog/roadmap/mazegame.png" alt="Đồ án Game Python" style="max-width: 90%; height: auto;">
-  <figcaption style="font-size: 14px; color: #555;">Đồ án game Maze, Lập trình cho AI (Python).</figcaption>
+  <img src="/images/blog/roadmap/mazegame.png" alt="Project game Maze" style="max-width: 90%; height: auto;">
+  <figcaption style="font-size: 14px; color: #555;">Project game Maze, Intro2Prog for AI (Python).</figcaption>
 </figure>
