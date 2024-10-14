@@ -53,3 +53,22 @@ Courses:
   <img src="/images/blog/roadmap/mazegame.png" alt="Project game Maze" style="max-width: 90%; height: auto;">
   <figcaption style="font-size: 14px; color: #555;">Project game Maze, Intro2Prog for AI (Python).</figcaption>
 </figure>
+
+## Semester 3
+
+Omg DSA - DEAD SAD ALREADY, Computer Network (god of CSC), Combinatorics Math (super graph, 11h30 cannt go home),...
+
+Courses:
+
+- Data Structures and Algorithms
+- Computer Network
+- Combinatorics Math
+- Probability and Statistics
+- Scientific Socialism
+- General Physics 2
+
+<figure style="text-align: center; margin-bottom: 20px;">
+  <img src="/images/blog/roadmap/aic24.png" alt="aic24" style="max-width: 90%; height: auto;">
+  <figcaption style="font-size: 14px; color: #555;">AI Challenge HCMC 2024 - WATLERE</figcaption>
+</figure>
+
