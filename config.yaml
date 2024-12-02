@@ -159,7 +159,7 @@ params:
     content: |-
       I am a student with a passion for AI and software. I have a background in computer science and mathematics. I am currently studying at FIT@HCMUS - VNUHCM in Thu Duc, HCMC.
 
-      I am currently working on project: Event Retrieval from Visual Data (task: Video-text Retrieval), Team WATLERE - AI23@HCMUS, AI Challenge HCMC 2024.
+      I led a team to participate in the contest: Event Retrieval from Visual Data (task: Video-text Retrieval), Team WATLERE - AI23@HCMUS, AI Challenge HCMC 2024.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
@@ -167,9 +167,9 @@ params:
         - "C/C++, Python"
         - "Keras/Tensorflow"
         - "Pandas, Numpy"
-        - "Docker, Git"
-        - "Multi-Agents LLM"
+        - "Git, Github"
         - "Video-text Retrieval"
+        - "Socket Programming"
 
   # Experience
   experience:
