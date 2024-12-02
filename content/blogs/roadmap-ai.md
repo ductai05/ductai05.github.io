@@ -23,7 +23,7 @@ I love 3T & Introduction to Programming, aLongg_timenosee & Introduction to AI.
 
 Courses:
 
-- NIntroduction to Programming
+- Introduction to Programming
 - Introduction to AI
 - Calculus 1B
 - Discrete Mathematics
@@ -66,6 +66,8 @@ Courses:
 - Probability and Statistics
 - Scientific Socialism
 - General Physics 2
+
+I also joined a funny contest in the summer of my first year at university: AIC24 HCMC.
 
 <figure style="text-align: center; margin-bottom: 20px;">
   <img src="/images/blog/roadmap/aic24.png" alt="aic24" style="max-width: 90%; height: auto;">
