@@ -277,15 +277,15 @@ params:
         content: A simple maze game made with Python.
         image: /images/projects/s2y1_mazegame.png
         featured:
-          name: Code + Report
-          link: https://github.com/ductai05/S2Y1_MazeGame
+          name: Demo
+          link: https://www.youtube.com/watch?v=DU6L0tnjWak
         badges:
           - "Python"
           - "DSA"
         links:
           - icon: fab fa-github
-            url: https://github.com/ductai05/S1Y1_DeployVTON
-            
+            url: https://github.com/ductai05/S2Y1_MazeGame
+
       # - title: Research - Deploy Vitual Try-On system
       #   content: Research and deploy a virtual try-on system for fashion products.
       #   image: /images/projects/s1y1_deployvton.png
