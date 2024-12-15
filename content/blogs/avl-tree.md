@@ -42,11 +42,12 @@ Khai báo một node trong của cây:
 
 {{< highlight cpp >}}
 
-struct node {
-  int data;
-  node *left;
-  node *right;
+struct Node {
+  int key;
+  Node* left;
+  Node* right;
 };
+
 
 {{< /highlight >}}
 
@@ -61,17 +62,18 @@ Các hoạt động thêm sửa xóa cũng tương tự như linker list.
 
 {{< highlight cpp >}}
 
-node *insert(node *t, int x){
-  if (t == NULL){
-    node *temp = new node;
-    temp->data =x;
-    temp->left = NULL;
-    temp->right = NULL;
-    return temp;
-  } else {
-    if (x < t->data) t->left = insert(t->left, x);
-    else t->right = insert(t->right, x);
-  }
+Node* newNode(int data){
+  Node* node = new Node;
+  node->key = data;
+  node->left = nullptr;
+  node->right = nullptr;
+  return node;
+}
+
+Node* insertNode(Node* root, int data){
+  if (root == nullptr) return newNode(data);
+  if (data <= root->key) root->left = insertNode(root->left, data); 
+  else root->right = insertNode(root->right, data);
 }
 
 {{< /highlight >}}
@@ -99,11 +101,11 @@ Nếu một cây nhị phân được duyệt trung thứ tự, kết quả tạ
 
 {{< highlight cpp >}}
 
-void printTree(node *t){
-  if (t != NULL){
-    printTree(t->left);
-    cout << t->data << " " ;
-    printTree(t->right);
+void LNR(Node* root){
+  if (root != nullptr){
+    LNR(root->left);
+    cout << root->key << " ";
+    LNR(root->right);
   }
 }
 
@@ -124,11 +126,11 @@ Trong cách thức duyệt tiền thứ tự trong cây nhị phân, nút gốc 
 
 {{< highlight cpp >}}
 
-void printTree(node *t){
-  if (t != NULL){
-    cout << t->data << " " ;
-    printTree(t->left);
-    printTree(t->right);
+void NLR(Node* root){
+  if (root != nullptr){
+    cout << root->key << " ";
+    NLR(root->left);
+    NLR(root->right);
   }
 }
 
@@ -149,59 +151,12 @@ Trong cách thức duyệt hậu thứ tự trong cây nhị phân, nút gốc c
 
 {{< highlight cpp >}}
 
-void printTree(node *t){
-  if (t != NULL){
-    printTree(t->left);
-    printTree(t->right);
-    cout << t->data << " " ;
+void LRN(Node* root){
+  if (root != nullptr){
+    LRN(root->left);
+    LRN(root->right);
+    cout << root->key << " ";
   }
-}
-
-{{< /highlight >}}
-
-### 2.3 Đếm số lá của cây
-
-Ta có thể sử dụng đệ quy để đếm số lá của cây. Gọi hàm đếm này là <mark>countLeafNode(t)</mark>
-- Nếu t rỗng thì <mark>countLeafNode(t) = 0</mark>
-- Nếu t là một nút lá thì <mark>countLeafNode(n) = 1</mark>
-- Các trường hợp còn lại thì trả về <mark>countLeafNode(t->left) + countLeafNode(t->right)</mark>
-
-{{< highlight cpp >}}
-
-bool isLeafNode(node *l){
-  return (l->left == NULL && l->right == NULL);
-}
-int countLeafNode(node *t){
-  if (t == NULL) return 0;
-  if (isLeafNode(t)) return 1;
-  return countLeafNode(t->left) + countLeafNode(t->right);
-}
-
-{{< /highlight >}}
-
-### 2.4 Bậc của cây
-
-<figure style="text-align: center; margin-bottom: 20px;">
-  <img src="/images/blog/avl-tree/tree-level.png" alt="Bậc của cây" style="max-width: 90%; height: auto;">
-  <figcaption style="font-size: 14px; color: #555;"> Bậc của cây </figcaption>
-</figure>
-
-Bậc cho biết khoảng cách từ nút gốc đến nút cụ thể trong cây. Nút gốc có bậc 0, các nút con của nó có bậc 1, và cứ tiếp tục như vậy...
-
-Ta có thể sử dụng đệ quy để tính bậc của cây. Gọi hàm này là <mark>treeLevel(t)</mark>
-
-- Nếu t rỗng <mark>treeLevel(t) = -1</mark>
-- Nếu t là một lá thì <mark>treeLevel(t) = 0</mark>
-- Trường hợp còn lại thì <mark>treeLevel(t) = 1 + max(treeLevel(t->left), treeLevel(t->right))</mark>
-
-{{< highlight cpp >}}
-
-bool isLeafNode(node *l){
-  return (l->left == NULL && l->right == NULL);
-}
-int treeLevel(node *t){
-  if (t == NULL) return -1;
-  return 1 + max(treeLevel(t->left), treeLevel(t->right));
 }
 
 {{< /highlight >}}
