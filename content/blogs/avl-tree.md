@@ -180,11 +180,11 @@ Node* newNode(int data){
 
 {{< /highlight >}}
 
-### 3.1 Bậc của cây AVL và Balance Factor
+### 3.1 Bậc và Balance Factor
 
 Cây AVL kiểm tra độ cao (bậc) của các cây con bên trái và cây con bên phải và bảo đảm rằng hiệu số giữa chúng là không lớn hơn **1**. Hiệu số này được gọi là **Balance Factor (Nhân tố cân bằng)**.
 
-<mark>BF(X) := Height(RightSubtree(X)) - Height(LeftSubtree(X)); abs(BF(X)) <= 1</mark>
+<mark>BF(X) := Height(LeftSubtree(X)) - Height(RightSubtree(X)); abs(BF(X)) <= 1</mark>
 
 Hình ảnh ví dụ của cây AVL:
 
@@ -209,7 +209,7 @@ int getBalance(Node* node){
 
 {{< /highlight >}}
 
-### 3.2 Các kĩ thuật xoay cây AVL
+### 3.2 Xoay cây AVL
 
 Với những cây nhị phân tìm kiếm, nhiều cây sẽ rơi vào trường hợp rất xấu, trường hợp xấu nhất là tất cả các node cha chỉ có một node con, việc tìm kiếm trên cây này có ĐPT là **O(n)**, lúc đó cây này không khác biệt mấy so với một danh sách liên kết.
 
@@ -217,9 +217,9 @@ Với những cây nhị phân tìm kiếm, nhiều cây sẽ rơi vào trườn
 
 #### 3.2.1 Kĩ thuật xoay phải
 
-{{< highlight cpp >}}
-
 Kỹ thuật này thường áp dụng cho những cây nhị phần tìm kiếm bị lệch về bên trái (độ cao của cây con trái lớn hơn độ của của cây con phải). 
+
+{{< highlight cpp >}}
 
 Node* rightRotate(Node* A){ // (B->C)<-A  =>  B->(C<-A)  
   Node* B = A->left;
@@ -241,7 +241,6 @@ Kỹ thuật này thường áp dụng cho những cây nhị phần tìm kiếm
 
 {{< highlight cpp >}}
 
-Kỹ thuật này thường áp dụng cho những cây nhị phần tìm kiếm bị lệch về bên trái (độ cao của cây con trái lớn hơn độ của của cây con phải). 
 
 Node* leftRotate(Node* A){ // A->(C<-B)  =>  (A->C)<-B
   Node* B = A->right;
@@ -257,7 +256,7 @@ Node* leftRotate(Node* A){ // A->(C<-B)  =>  (A->C)<-B
 
 {{< /highlight >}}
 
-### 3.3 Thêm node vào cây AVL
+### 3.3 Thêm node
 
 Vì là cây AVL nên chúng ta sẽ không thêm các giá trị đã tồn tại trong cây.
 
@@ -301,7 +300,7 @@ Node* insertNode(Node* root, int data){
 
 {{< /highlight >}}
 
-### 3.4 Tìm kiếm trong cây AVL
+### 3.4 Tìm kiếm
 
 Các bước tìm kiếm trong cây AVL giống như tìm trong BST.
 
@@ -316,7 +315,7 @@ Node* searchNode(Node* root, int data){
 
 {{< /highlight >}}
 
-### 3.5 Xóa node trong cây AVL
+### 3.5 Xóa node
 
 {{< highlight cpp >}}
 
