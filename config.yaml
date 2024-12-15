@@ -235,9 +235,9 @@ params:
           Learning & Competitions - HSfG@BaoLoc:
           - Math major: Inequality Equations, Euclidean Geometry, Solid Geometry, Combination & Probability, Integral Calculus.
           - First Prize in Mathematics, Provincial-level Excellent Students Contest Grade 12, Lam Dong 2023
-          - 1012/1200, APT 2023 - VNUHCM.
+          - 1012/1200 point (top 0,237%), APT 2023 - VNUHCM.
         featuredLink:
-          enable: true
+          enable: false
           name: "My academic record"
           url: "https://leetcode.com/u/cieldt/"
 
@@ -246,25 +246,28 @@ params:
     enable: true
     title: "Achievements"
     items:
-      - title: Machine Learning Specialization
-        content: verified by Stanford University & DeepLearning.AI
-        url: https://www.coursera.org/account/accomplishments/specialization/LLGLE5EB24WP
-        image: /images/profile/ML.png
-      - title: Mathematics for Machine Learning and Data Science Specialization
-        content: verified by DeepLearning.AI
-        url: https://www.coursera.org/account/accomplishments/specialization/G7B8W4VZDBLZ
-        image: /images/profile/Math4ML.png
-      - title: Google Advanced Data Analytics Professional Certificate
-        content: verified by Google
-        url: https://www.coursera.org/account/accomplishments/professional-cert/8LWUUBB9Y8E5
-        image: /images/profile/GGADA.png
-      - title: Google Data Analytics Professional Certificate
-        content: verified by Google
-        url: https://www.coursera.org/account/accomplishments/professional-cert/D22C4QX2AKTS
-        image: /images/profile/GGDA.png
+      # - title: Machine Learning Specialization
+      #   content: verified by Stanford University & DeepLearning.AI
+      #   url: https://www.coursera.org/account/accomplishments/specialization/LLGLE5EB24WP
+      #   image: /images/profile/ML.png
+      # - title: Mathematics for Machine Learning and Data Science Specialization
+      #   content: verified by DeepLearning.AI
+      #   url: https://www.coursera.org/account/accomplishments/specialization/G7B8W4VZDBLZ
+      #   image: /images/profile/Math4ML.png
+      # - title: Google Advanced Data Analytics Professional Certificate
+      #   content: verified by Google
+      #   url: https://www.coursera.org/account/accomplishments/professional-cert/8LWUUBB9Y8E5
+      #   image: /images/profile/GGADA.png
+      # - title: Google Data Analytics Professional Certificate
+      #   content: verified by Google
+      #   url: https://www.coursera.org/account/accomplishments/professional-cert/D22C4QX2AKTS
+      #   image: /images/profile/GGDA.png
       - title: First Prize in Mathematics, Provincial-level Excellent Students Contest Grade 12, Lam Dong 2023
         content: verified by Director of the Department of Education and Training of Lam Dong Province, Mar 2023
         image: /images/profile/1stMATH.png
+      - title: Participated in the Final Round of the 5th AI Challenge HCMC 2024, (Event retrieval from visual data)
+        content: verified by Ho Chi Minh City Department of Information and Communications, Oct 2024
+        image: /images/profile/aic24.png
   # projects
   projects:
     enable: true
@@ -282,35 +285,36 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/ductai05/S1Y1_DeployVTON
-      - title: Research - Deploy Vitual Try-On system
-        content: Research and deploy a virtual try-on system for fashion products.
-        image: /images/projects/s1y1_deployvton.png
-        featured:
-          name: Report + Demo
-          link: https://github.com/ductai05/S1Y1_DeployVTON
-        badges:
-          - "Python"
-          - "VTON"
-          - "AI"
-          - "Computer Vision"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/ductai05/S1Y1_DeployVTON
+            
+      # - title: Research - Deploy Vitual Try-On system
+      #   content: Research and deploy a virtual try-on system for fashion products.
+      #   image: /images/projects/s1y1_deployvton.png
+      #   featured:
+      #     name: Report + Demo
+      #     link: https://github.com/ductai05/S1Y1_DeployVTON
+      #   badges:
+      #     - "Python"
+      #     - "VTON"
+      #     - "AI"
+      #     - "Computer Vision"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/ductai05/S1Y1_DeployVTON
 
-      - title: Research - AI Pipline
-        content: Research AI pipline for application.
-        image: /images/projects/s1y1_aipipline.png 
-        featured:
-          name: Code + Report
-          link: https://github.com/ductai05/S1Y1_AI-Pipeline
-        badges:
-          - "Python"
-          - "AI"
-          - "Machine Learning"
-          - "Deep Learning"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/ductai05/S1Y1_AI-Pipeline
+      # - title: Research - AI Pipline
+      #   content: Research AI pipline for application.
+      #   image: /images/projects/s1y1_aipipline.png 
+      #   featured:
+      #     name: Code + Report
+      #     link: https://github.com/ductai05/S1Y1_AI-Pipeline
+      #   badges:
+      #     - "Python"
+      #     - "AI"
+      #     - "Machine Learning"
+      #     - "Deep Learning"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/ductai05/S1Y1_AI-Pipeline
 
 
   #Contact
