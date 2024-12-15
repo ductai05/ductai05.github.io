@@ -212,7 +212,20 @@ Hiệu suất trường hợp xấu nhất của cây tìm kiếm nhị phân **
 
 **Cây AVL** (viết tắt của tên các nhà phát minh **A**delson, **V**elski và **L**andis) là cây tìm kiếm nhị phân có độ cân bằng cao. Các hành vi tìm kiếm, thêm hoặc xóa có độ phức tạp là **O(log n)** trong các trường hợp trung bình và trường hợp tệ nhất. 
 
-### 3.1 Kiểm tra cây AVL
+{{< highlight cpp >}}
+
+Node* newNode(int data){
+  Node* node = new Node;
+  node->key = data;
+  node->left = nullptr;
+  node->right = nullptr;
+  node->height = 1;
+  return node;
+}
+
+{{< /highlight >}}
+
+### 3.1 Bậc của cây AVL và Balance Factor
 
 Cây AVL kiểm tra độ cao (bậc) của các cây con bên trái và cây con bên phải và bảo đảm rằng hiệu số giữa chúng là không lớn hơn **1**. Hiệu số này được gọi là **Balance Factor (Nhân tố cân bằng)**.
 
@@ -225,12 +238,18 @@ Hình ảnh ví dụ của cây AVL:
   <figcaption style="font-size: 14px; color: #555;"> Cây AVL với nhân tố cân bằng </figcaption>
 </figure>
 
+Chúng ta có 2 hàm phụ trợ để tính bậc của node và tính **Balance Factor** như sau:
+
 {{< highlight cpp >}}
 
-bool checkAvl(node *t){
-  if (t == NULL) return true;
-  if (abs(treeLevel(t->left) - treeLevel(t->right)) > 1) return false;
-  return checkAvl(t->left) && checkAvl(t->right);
+int height(Node* node){
+  if (node == nullptr) return 0;
+  return node->height;
+}
+
+int getBalance(Node* node){
+  if (node == nullptr) return 0;
+  return height(node->left) - height(node->right);
 }
 
 {{< /highlight >}}
@@ -243,8 +262,172 @@ Với những cây nhị phân tìm kiếm, nhiều cây sẽ rơi vào trườn
 
 #### 3.2.1 Kĩ thuật xoay phải
 
+{{< highlight cpp >}}
+
 Kỹ thuật này thường áp dụng cho những cây nhị phần tìm kiếm bị lệch về bên trái (độ cao của cây con trái lớn hơn độ của của cây con phải). 
+
+Node* rightRotate(Node* A){ // (B->C)<-A  =>  B->(C<-A)  
+  Node* B = A->left;
+  Node* C = B->right;
+
+  B->right = A;
+  A->left = C;
+  
+  A->height = 1 + max(height(A->left), height(A->right));
+  B->height = 1 + max(height(B->left), height(B->right));
+  return B;
+}
+
+{{< /highlight >}}
 
 #### 3.2.2 Kĩ thuật xoay trái
 
 Kỹ thuật này thường áp dụng cho những cây nhị phần tìm kiếm bị lệch về bên phải(độ cao của cây con phải lớn hơn độ của của cây con trái)
+
+{{< highlight cpp >}}
+
+Kỹ thuật này thường áp dụng cho những cây nhị phần tìm kiếm bị lệch về bên trái (độ cao của cây con trái lớn hơn độ của của cây con phải). 
+
+Node* leftRotate(Node* A){ // A->(C<-B)  =>  (A->C)<-B
+  Node* B = A->right;
+  Node* C = B->left;
+
+  B->left = A;
+  A->right = C;
+
+  A->height = 1 + max(height(A->left), height(A->right));
+  B->height = 1 + max(height(B->left), height(B->right));
+  return B;
+}
+
+{{< /highlight >}}
+
+### 3.3 Thêm node vào cây AVL
+
+Vì là cây AVL nên chúng ta sẽ không thêm các giá trị đã tồn tại trong cây.
+
+{{< highlight cpp >}}
+
+Node* insertNode(Node* root, int data){
+  // a. insertNode like BST
+  if (root == nullptr) return newNode(data);
+  if (data < root->key) root->left = insertNode(root->left, data); 
+  else if (data > root->key) root->right = insertNode(root->right, data);
+  else return root; // (do not add existing keys)
+
+  // b. update Height
+  root->height = 1 + max(height(root->left), height(root->right));
+
+  // c. get Balance factor
+  int balance = getBalance(root);
+
+  // Left Left case:
+  if (balance > 1 && getBalance(root->left) >= 0){
+    return rightRotate(root);
+  }
+  // Left Right case:
+  if (balance > 1 && getBalance(root->left) < 0){
+    root->left = leftRotate(root->left);
+    return rightRotate(root);
+  }
+
+  // Right Right case:
+  if (balance < -1 && getBalance(root->right) <= 0){
+    return leftRotate(root);
+  }
+  // Right Left case:
+  if (balance < -1 && getBalance(root->right) > 0){
+    root->right = rightRotate(root->right);
+    return leftRotate(root);
+  }
+
+  return root; // unchange root
+}
+
+{{< /highlight >}}
+
+### 3.4 Tìm kiếm trong cây AVL
+
+Các bước tìm kiếm trong cây AVL giống như tìm trong BST.
+
+{{< highlight cpp >}}
+
+Node* searchNode(Node* root, int data){
+  if (root == nullptr) return nullptr;
+  if (root->key == data) return root;
+  if (data < root->key) return searchNode(root->left, data);
+  else return searchNode(root->right, data);
+}
+
+{{< /highlight >}}
+
+### 3.5 Xóa node trong cây AVL
+
+{{< highlight cpp >}}
+
+Node* minValueNode(Node* node){
+  Node* current = node;
+  while (current->left != nullptr){
+    current = current->left;
+  }
+  return current;
+}
+
+Node* deleteNode(Node* root, int data){
+  // a. deleteNode BST
+  if (root == nullptr) return root;
+
+  if (data < root->key) root->left = deleteNode(root->left, data);
+  else if (data > root->key) root->right = deleteNode(root->right, data);
+  else {
+    // no child or one child
+    if ((root->left == nullptr) || (root->right == nullptr)){
+      Node* temp = root->left ? root->left : root->right;
+
+      if (temp == nullptr){ // no child case
+        temp = root;
+        root = nullptr;
+      } else { // one child case
+        *root = *temp; // child -> root
+      }
+      delete temp;
+    } else { // two child
+      // get inorder successor
+      Node* temp = minValueNode(root->right);
+      root->key = temp->key; // swap value (root <-> inorder successor)
+      root->right = deleteNode(root->right, temp->key); // delete inorder successor
+    }
+  }
+
+  if (root == nullptr) return root;
+
+  // b. update height;
+  root->height = 1 + max(height(root->left), height(root->right));
+
+  // c. get Balance factor
+  int balance = getBalance(root);
+
+  // Left Left case:
+  if (balance > 1 && getBalance(root->left) >= 0){
+    return rightRotate(root);
+  }
+  // Left Right case:
+  if (balance > 1 && getBalance(root->left) < 0){
+    root->left = leftRotate(root->left);
+    return rightRotate(root);
+  }
+
+  // Right Right case:
+  if (balance < -1 && getBalance(root->right) <= 0){
+    return leftRotate(root);
+  }
+  // Right Left case:
+  if (balance < -1 && getBalance(root->right) > 0){
+    root->right = rightRotate(root->right);
+    return leftRotate(root);
+  }
+
+  return root;
+}
+
+{{< /highlight >}}
