@@ -15,7 +15,7 @@ toc:
 
 AI23 - FIT@HCMUS, VNUHCM.
 
-This is my simple [Roadmap](https://roadmap.sh/r/ai-hcmus), or you can see it [here](https://github.com/users/ductai05/projects/1).
+This is my simple [Roadmap](https://roadmap.sh/r/ai-hcmus). You can also see it [here](https://github.com/users/ductai05/projects/1).
 
 ## Semester 1
 
@@ -54,6 +54,16 @@ Courses:
   <figcaption style="font-size: 14px; color: #555;">Project game Maze, Intro2Prog for AI (Python).</figcaption>
 </figure>
 
+#### First-year summer
+
+I joined a funny contest in the summer of my first year at university: AIC24 HCMC.
+
+<figure style="text-align: center; margin-bottom: 20px;">
+  <img src="/images/blog/roadmap/aic24.png" alt="aic24" style="max-width: 90%; height: auto;">
+  <figcaption style="font-size: 14px; color: #555;">AI Challenge HCMC 2024 - WATLERE</figcaption>
+</figure>
+
+
 ## Semester 3
 
 Omg DSA - DEAD SAD ALREADY, Computer Network (god of CSC), Combinatorics Math (super graph, 11h30 cannt go home),...
@@ -67,10 +77,8 @@ Courses:
 - Scientific Socialism
 - General Physics 2
 
-I also joined a funny contest in the summer of my first year at university: AIC24 HCMC.
 
 <figure style="text-align: center; margin-bottom: 20px;">
-  <img src="/images/blog/roadmap/aic24.png" alt="aic24" style="max-width: 90%; height: auto;">
-  <figcaption style="font-size: 14px; color: #555;">AI Challenge HCMC 2024 - WATLERE</figcaption>
+  <img src="/images/blog/roadmap/socket.png" alt="Control Computer via mail" style="max-width: 90%; height: auto;">
+  <figcaption style="font-size: 14px; color: #555;">Control Computer via mail, Computer Networking.</figcaption>
 </figure>
-
