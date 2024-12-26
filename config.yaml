@@ -286,6 +286,21 @@ params:
           - icon: fab fa-github
             url: https://github.com/ductai05/S2Y1_MazeGame
 
+      - title: Control Computer via Gmail
+        content: Using cURL and Winsock, along with IMAP, SMTP, and Sockets, to control a cluster of 
+        Server computers within a LAN from a Client machine (the Client and the LAN Server Network 
+        communicate through Gmail).
+        image: /images/projects/s1y2_socket.png
+        featured:
+          name: Demo
+          link: https://www.youtube.com/watch?v=wPzeurOE8So
+        badges:
+          - "C++"
+          - "Computer Networking"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/ductai05/socket
+
       # - title: Research - Deploy Vitual Try-On system
       #   content: Research and deploy a virtual try-on system for fashion products.
       #   image: /images/projects/s1y1_deployvton.png
