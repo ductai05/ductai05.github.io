@@ -15,7 +15,7 @@ toc:
 
 AI23 - FIT@HCMUS, VNUHCM.
 
-This is my simple [Roadmap](https://roadmap.sh/r/ai-hcmus)
+This is my simple [Roadmap](https://roadmap.sh/r/ai-hcmus), or you can see it [here](https://github.com/users/ductai05/projects/1).
 
 ## Semester 1
 
