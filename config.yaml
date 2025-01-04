@@ -89,10 +89,10 @@ params:
   color:
     textColor: "#343a40"
     secondaryTextColor: "#6c757d"
-    backgroundColor: "#eaedf0"
-    secondaryBackgroundColor: "#64ffda1a"
+    backgroundColor: "#f5f5f5"
+    secondaryBackgroundColor: "#e9ecef"
     primaryColor: "#007bff"
-    secondaryColor: "#f8f9fa"
+    secondaryColor: "#e2e6ea"
 
     darkmode:
       textColor: "#f5f5f5"
