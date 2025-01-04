@@ -136,7 +136,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "https://drive.google.com/drive/folders/1ihyAWdfXregR6eQxQtKSaDCvHiNQWb6S"
+      url: "/images/profile/cv.png"
       download: false
       newPage: true
     socialLinks:
