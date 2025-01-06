@@ -96,11 +96,11 @@ params:
 
     darkmode:
       textColor: "#f5f5f5"
-      secondaryTextColor: "#a9b7c6"
-      backgroundColor: "#101c2c"
+      secondaryTextColor: "#5eeece"
+      backgroundColor: "#101c2c" 
       secondaryBackgroundColor: "#182444"
-      primaryColor: "#0066ff"
-      secondaryColor: "#65ffdb"
+      primaryColor: "#0066ff"               #done
+      secondaryColor: "#102241"
 
   # If you want to customize the menu, you can change it here
   navbar:
