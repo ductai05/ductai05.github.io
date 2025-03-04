@@ -82,3 +82,16 @@ Courses:
   <img src="/images/blog/roadmap/socket.png" alt="Control Computer via mail" style="max-width: 90%; height: auto;">
   <figcaption style="font-size: 14px; color: #555;">Control Computer via mail, Computer Networking.</figcaption>
 </figure>
+
+## Semester 4
+
+Learn math with Gold Medal IMO 2013 - Mr Can. 
+
+Courses:
+- Mathematics for Machine Learning
+- Object-oriented Programming
+- Databases
+- Computer Systems 
+- Marxist-Leninist Philosophy
+- Ho Chi Minh’s Ideology
+- Creativity Methodologies.
