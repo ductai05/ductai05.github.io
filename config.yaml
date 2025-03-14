@@ -87,20 +87,20 @@ params:
   # color preference
   # When using hex codes for colors, quotations must be used along with the # sign
     color:
-      textColor: "#202124"            # Màu chữ tối, gần như đen, tạo độ tương phản tốt với nền sáng
-      secondaryTextColor: "#5f6368"     # Màu chữ phụ nhẹ nhàng, không quá đậm
-      backgroundColor: "#f1f3f4"        # Nền sáng với tone xám rất nhẹ, êm mắt
-      secondaryBackgroundColor: "#ffffff" # Nền phụ (ví dụ: card) dùng màu trắng tinh khiết
-      primaryColor: "#3367d6"           # Màu chính – sắc xanh dương đậm tạo điểm nhấn mạnh mẽ
-      secondaryColor: "#d2e3fc"         # Màu phụ – sắc xanh nhạt, hài hòa với màu chính
+      textColor: "#2c3e50"            
+      secondaryTextColor: "#34495e"     
+      backgroundColor: "#ecf0f1"        
+      secondaryBackgroundColor: "#bdc3c7" 
+      primaryColor: "#e67e22"           
+      secondaryColor: "#f39c12"         
 
       darkmode:
-        textColor: "#e8eaed"            # Màu chữ sáng, dễ đọc trên nền tối
-        secondaryTextColor: "#bdc1c6"     # Màu chữ phụ cho dark mode, nhẹ nhàng và không chói
-        backgroundColor: "#202124"        # Nền tối với tone xám đen, phù hợp cho dark mode
-        secondaryBackgroundColor: "#303134" # Nền phụ tối, giúp phân chia các vùng nội dung
-        primaryColor: "#8ab4f8"           # Màu chính cho dark mode – sắc xanh lam nhẹ, nổi bật trên nền tối
-        secondaryColor: "#3c4043"         # Màu phụ cho dark mode – sắc xám đen, tạo sự cân bằng
+      textColor: "#ecf0f1"           
+      secondaryTextColor: "#bdc3c7"    
+      backgroundColor: "#2c3e50"        
+      secondaryBackgroundColor: "#34495e" 
+      primaryColor: "#d35400"           
+      secondaryColor: "#e67e22"      
 
 
   # If you want to customize the menu, you can change it here
