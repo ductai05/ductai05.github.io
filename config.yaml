@@ -85,21 +85,22 @@ params:
     textAlign: left # default: left
 
   # color preference
-  color:
-    textColor: "#2E2E2E"          # Dark gray text
-    secondaryTextColor: "#6B7280"   # Warm gray for subtext
-    backgroundColor: "#FFFFFF"      # Crisp white background
-    secondaryBackgroundColor: "#F3F4F6"  # Light gray background
-    primaryColor: "#2563EB"         # Vivid blue primary color
-    secondaryColor: "#10B981"       # Fresh green accent
+  # When using hex codes for colors, quotations must be used along with the # sign
+    color:
+      textColor: "#2d3748"
+      secondaryTextColor: "#4a5568"
+      backgroundColor: "#ffffff"
+      secondaryBackgroundColor: "#f7fafc"
+      primaryColor: "#4299e1"
+      secondaryColor: "#ebf8ff"
 
-    darkmode:
-      textColor: "#E5E7EB"          # Light gray text for dark mode
-      secondaryTextColor: "#9CA3AF"   # Soft light gray for secondary text
-      backgroundColor: "#1F2937"    # Deep dark background
-      secondaryBackgroundColor: "#374151"  # Slightly lighter dark background
-      primaryColor: "#3B82F6"         # Brighter blue primary in dark mode
-      secondaryColor: "#6EE7B7"       # Light green accent for dark mode
+      darkmode:
+        textColor: "#f7fafc"
+        secondaryTextColor: "#8be9fd"
+        backgroundColor: "#1a202c"
+        secondaryBackgroundColor: "#2d3748"
+        primaryColor: "#38b2ac"
+        secondaryColor: "#234e52"
 
   # If you want to customize the menu, you can change it here
   navbar:
