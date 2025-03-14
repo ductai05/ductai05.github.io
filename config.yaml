@@ -92,15 +92,15 @@ params:
     backgroundColor: "#f8f9fa"             
     secondaryBackgroundColor: "#e9ecef"    
     primaryColor: "#007bff"                
-    secondaryColor: "#6c757d"             
+    secondaryColor: "#a4b1d7"             
 
     darkmode:
       textColor: "#ffffff"                   
-      secondaryTextColor: "#adb5bd"          
+      secondaryTextColor: "#dfe3e6"          
       backgroundColor: "#212529"             
-      secondaryBackgroundColor: "#343a40"    
-      primaryColor: "#007bff"                
-      secondaryColor: "#6c757d"             
+      secondaryBackgroundColor: "#343a40"     
+      primaryColor: "#007bff"                 # BIG NAME           
+      secondaryColor: "#2a3035"               # BOX 
 
 
   # If you want to customize the menu, you can change it here
