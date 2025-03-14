@@ -91,16 +91,16 @@ params:
       secondaryTextColor: "#34495e"     
       backgroundColor: "#ecf0f1"        
       secondaryBackgroundColor: "#bdc3c7" 
-      primaryColor: "#e67e22"           
-      secondaryColor: "#f39c12"         
+      primaryColor: "#0707c3"           
+      secondaryColor: "#d4080b"         
 
       darkmode:
       textColor: "#ecf0f1"           
       secondaryTextColor: "#bdc3c7"    
       backgroundColor: "#2c3e50"        
       secondaryBackgroundColor: "#34495e" 
-      primaryColor: "#d35400"           
-      secondaryColor: "#e67e22"      
+      primaryColor: "#0707c3"           
+      secondaryColor: "#d4080b"      
 
 
   # If you want to customize the menu, you can change it here
