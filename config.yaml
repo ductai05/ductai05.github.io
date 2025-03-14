@@ -86,21 +86,21 @@ params:
 
   # color preference
   # WHEN USING HEX CODES FOR COLORS, QUOTATIONS MUST BE USED ALONG WITH THE # SIGN
-  color:
-    textColor: "#000000"
-    secondaryTextColor: "#5F6368"
-    backgroundColor: "#FFFFFF"
-    secondaryBackgroundColor: "#F1F3F4"
-    primaryColor: "#1A73E8"
-    secondaryColor: "#DB4437"
+    color:
+      textColor: "#000000"                    # MAIN TEXT COLOR (done)
+      secondaryTextColor: "#4F5256"           # SECONDARY TEXT COLOR
+      backgroundColor: "#F5F7F8"              # MAIN BACKGROUND COLOR
+      secondaryBackgroundColor: "#E5E7E9"     # SECONDARY BACKGROUND COLOR 
+      primaryColor: "#1A73E8"                 # BIG NAME (done)
+      secondaryColor: "#D8DDF6"               # BIG BOX COLOR (done)
 
-    darkmode:
-      textColor: "#FFFFFF"
-      secondaryTextColor: "#E8EAED"
-      backgroundColor: "#202124"
-      secondaryBackgroundColor: "#303134"
-      primaryColor: "#8AB4F8"
-      secondaryColor: "#F28B82" 
+      darkmode:
+        textColor: "#FFFFFF"                   # MAIN TEXT COLOR (done)
+        secondaryTextColor: "#BBBEC2"          # SECONDARY TEXT COLOR
+        backgroundColor: "#181A1D"             # MAIN BACKGROUND COLOR
+        secondaryBackgroundColor: "#2A2D31"    # SECONDARY BACKGROUND COLOR
+        primaryColor: "#1A73E8"                # BIG NAME (done)
+        secondaryColor: "#02072A"              # BIG BOX COLOR (done)
 
 
   # If you want to customize the menu, you can change it here
