@@ -1,5 +1,5 @@
 ---
-title: "DucTai's AI Roadmap"
+title: "DucTai's AI Roadmap (updating)"
 date: 2024-07-29T15:36:24+07:00
 draft: false
 # github_link: "https://github.com/gurusabarish/hugo-profile"
@@ -67,6 +67,8 @@ I joined a funny contest in the summer of my first year at university: AIC24 HCM
 ## Semester 3
 
 Omg DSA - DEAD SAD ALREADY, Computer Network (god of CSC), Combinatorics Math (super graph, 11h30 cannt go home),...
+I even do not understand clearly statistics before final exam. 
+Thank god, before I decided to attend HCMUS, I was afraid that I couldn't learn physics as well as in high school. But I ended up with a 9.7 overall. 
 
 Courses:
 
@@ -95,3 +97,10 @@ Courses:
 - Marxist-Leninist Philosophy
 - Ho Chi Minh’s Ideology
 - Creativity Methodologies.
+
+I had an opportunity to visit FPT Software in Saigon High-Tech Park. Their company looks so professional, and I hope to work in a professional company like that (but maybe not FPT, fr).
+
+<figure style="text-align: center; margin-bottom: 20px;">
+  <img src="/images/blog/roadmap/fpt.png" alt="Control Computer via mail" style="max-width: 90%; height: auto;">
+  <figcaption style="font-size: 14px; color: #555;">FPT Software in Saigon High-Tech Park.</figcaption>
+</figure>
