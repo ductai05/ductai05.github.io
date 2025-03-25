@@ -101,6 +101,6 @@ Courses:
 I had an opportunity to visit FPT Software in Saigon High-Tech Park. Their company looks so professional, and I hope to work in a professional company like that (but maybe not FPT, fr).
 
 <figure style="text-align: center; margin-bottom: 20px;">
-  <img src="/images/blog/roadmap/fpt.png" alt="Control Computer via mail" style="max-width: 90%; height: auto;">
+  <img src="/images/blog/roadmap/fpt.jpeg" alt="Control Computer via mail" style="max-width: 90%; height: auto;">
   <figcaption style="font-size: 14px; color: #555;">FPT Software in Saigon High-Tech Park.</figcaption>
 </figure>
