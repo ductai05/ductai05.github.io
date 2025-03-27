@@ -213,12 +213,12 @@ params:
           name: "University of Science, VNU-HCM"
           url: "https://en.hcmus.edu.vn/"
         date: "2023 - 2026"
-        GPA: "8.76/10.00 (first-year)"
+        GPA: "8.78/10.00 (3 semesters)"
         content: |-
           Learning in FIT@HCMUS:
-          - Math: Calculus, Linear Algebra, Discrete Math, Prob&Stat, Combi. Math, Math4AI, Linear Prog.
-          - Programming: IntroProg, DSA, OOP, Database, ComNet, OS, CmpSys. 
-          - AI: Intro2AI, Prog4AI (Python), FdmtlAI, SE4AI, Data Min., ML, DL, NLP, CV, AI4InfoSec.
+          - Math: Calculus, Linear Algebra, Discrete & Combinatorial Math, Prob&Stat, Math4AI.
+          - IT: DSA, OOP, Database, CompNet, CompSys, OS. 
+          - AI: Intro2AI, Prog4AI, FdmtlAI, SE4AI, Data Mining, ML, DL, NLP, CV, AI4InfoSec.
 
           Extracurricular Activities:
           - Participated in the AI Challenge HCMC 2024.
