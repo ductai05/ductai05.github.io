@@ -1,6 +1,6 @@
 ---
 title: "DucTai's AI Roadmap (updating)"
-date: 2024-07-29T15:36:24+07:00
+date: 2025-03-30T10:20:25+07:00
 draft: false
 # github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Duc Tai"
