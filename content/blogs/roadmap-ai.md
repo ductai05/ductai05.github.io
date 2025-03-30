@@ -2,7 +2,7 @@
 title: "DucTai's AI Roadmap (updating)"
 date: 2025-03-30T10:20:25+07:00
 draft: false
-# github_link: "https://github.com/gurusabarish/hugo-profile"
+github_link: "https://github.com/ductai05"
 author: "Duc Tai"
 tags:
   - Roadmap

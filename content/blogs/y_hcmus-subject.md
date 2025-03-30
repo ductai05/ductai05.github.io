@@ -1,7 +1,7 @@
 ---
 title: "Probability & Statistics and Combinatorics Math @ Final Semester 1, Year 2"
 date: 2025-02-11T07:00:00+07:00
-draft: false
+draft: true
 # github_link: "https://github.com/ductai05/ductai05.github.io"
 author: "Duc Tai"
 tags:

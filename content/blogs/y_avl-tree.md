@@ -1,7 +1,7 @@
 ---
 title: "Cây AVL"
 date: 2024-08-16T22:21:00+07:00
-draft: false
+draft: true
 # github_link: "https://github.com/gurusabarish/hugo-profile"
 author: "Duc Tai"
 tags:
