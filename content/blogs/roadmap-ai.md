@@ -11,6 +11,7 @@ tags:
 image: /images/blog/roadmap/roadmap.png 
 description: "Learning AI at FIT@HCMUS"
 toc: 
+mathjax: true
 ---
 
 AI23 - FIT@HCMUS, VNUHCM.
@@ -103,4 +104,10 @@ I had an opportunity to visit FPT Software in Saigon High-Tech Park. Their compa
 <figure style="text-align: center; margin-bottom: 20px;">
   <img src="/images/blog/roadmap/fpt.jpeg" alt="Control Computer via mail" style="max-width: 90%; height: auto;">
   <figcaption style="font-size: 14px; color: #555;">FPT Software in Saigon High-Tech Park.</figcaption>
+</figure>
+
+Look at this crazy report, just 66 pages for a simple equation: $$ y = aX + b $$
+<figure style="text-align: center; margin-bottom: 20px;">
+  <img src="/images/blog/roadmap/LR-mathAI.jpeg" alt="Linear Regression @ Math4AI" style="max-width: 90%; height: auto;">
+  <figcaption style="font-size: 14px; color: #555;">Linear Regression @ Math4AI.</figcaption>
 </figure>
