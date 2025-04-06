@@ -108,6 +108,6 @@ I had an opportunity to visit FPT Software in Saigon High-Tech Park. Their compa
 
 Look at this crazy report, just 66 pages for a simple equation: $$ y = aX + b $$
 <figure style="text-align: center; margin-bottom: 20px;">
-  <img src="/images/blog/roadmap/LR-mathAI.jpeg" alt="Linear Regression @ Math4AI" style="max-width: 90%; height: auto;">
+  <img src="/images/blog/roadmap/LR-mathAI.png" alt="Linear Regression @ Math4AI" style="max-width: 90%; height: auto;">
   <figcaption style="font-size: 14px; color: #555;">Linear Regression @ Math4AI.</figcaption>
 </figure>
