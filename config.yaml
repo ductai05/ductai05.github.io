@@ -130,7 +130,7 @@ params:
     title: "Duc Tai."
     subtitle: "B.Sc. student in AI"
     content: "AI23 - FIT@HCMUS, VNUHCM.<br>TK9 - HSfG@BaoLoc."
-    image: /images/profile/ava1.png
+    image: /images/profile/ava-vng.jpeg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
