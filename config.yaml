@@ -273,7 +273,7 @@ params:
         image: /images/profile/aic24.png
       - title: Top 4 on public test, EVENTA Grand Challenge @ ACM Multimedia 2025
         content: arxiv.org/abs/2507.20564 | github.com/ductai05/ZSE-Cap
-        image: /images/profile/EVENTA.png
+        image: /images/profile/EVENTA.jpg
   # projects
   projects:
     enable: true
@@ -306,18 +306,18 @@ params:
           - icon: fab fa-github
             url: https://github.com/ductai05/Y2S1-ComputerNetworking
 
-      - title: Maze Game
-        content: A simple maze game made with Python.
-        image: /images/projects/y1s2_mazegame.png
-        featured:
-          name: Demo
-          link: https://www.youtube.com/watch?v=DU6L0tnjWak
-        badges:
-          - "Python"
-          - "DSA"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/ductai05/Y1S2-MazeGame
+      # - title: Maze Game
+      #   content: A simple maze game made with Python.
+      #   image: /images/projects/y1s2_mazegame.png
+      #   featured:
+      #     name: Demo
+      #     link: https://www.youtube.com/watch?v=DU6L0tnjWak
+      #   badges:
+      #     - "Python"
+      #     - "DSA"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/ductai05/Y1S2-MazeGame
 
       - title: Research - Deploy Vitual Try-On system
         content: Research and deploy a virtual try-on system for fashion products.
