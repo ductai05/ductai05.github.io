@@ -169,10 +169,10 @@ params:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
       items:
-        - "C/C++, Python"
+        - "C/C++, Python, FastAPI"
         - "Nix, NixOS, Git, Github"
         - "Numpy, Pandas, Polars"
-        - "FastAPI, Milvus, ElasticSearch"
+        - "Milvus, ElasticSearch"
         - "Video-text Retrieval"
         - "SQL Server"
 
