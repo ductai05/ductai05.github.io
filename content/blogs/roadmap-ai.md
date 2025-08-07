@@ -101,6 +101,8 @@ Courses:
 
 I had an opportunity to visit FPT Software in Saigon High-Tech Park. Their company looks so professional, and I hope to work in a professional company like that (but maybe not FPT, fr).
 
+I also had a chance to visit ZaloAI and VNG Campus. I really love their campus and the atmosphere here. I want to work at ZaloAI in the future (if I have a chance).
+
 <figure style="text-align: center; margin-bottom: 20px;">
   <img src="/images/blog/roadmap/fpt.jpeg" alt="Control Computer via mail" style="max-width: 90%; height: auto;">
   <figcaption style="font-size: 14px; color: #555;">FPT Software in Saigon High-Tech Park.</figcaption>

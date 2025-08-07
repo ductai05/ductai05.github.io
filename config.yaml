@@ -148,6 +148,8 @@ params:
           url: https://facebook.com/ductai05
         - icon: fab fa-linkedin
           url: https://linkedin.com/in/ductai05
+        - icon: fab fa-orcid
+          url: https://orcid.org/0009-0002-4958-8960
         - icon: fab fa-kaggle
           url: https://kaggle.com/cieldt
       customIcons:
@@ -160,19 +162,19 @@ params:
     title: "About Me"
     image: "/images/profile/ava2.png"
     content: |-
-      I am a student with a passion for AI and software. I have a background in computer science and mathematics. I am currently studying at FIT@HCMUS - VNUHCM in Thu Duc, HCMC.
+      I am a third-year student with a passion for AI and software. I have a background in computer science and mathematics. I am currently studying at FIT@HCMUS - VNUHCM in Thu Duc, HCMC.
 
-      I led a team to participate in the contest: Event Retrieval from Visual Data (task: Video-text Retrieval), Team WATLERE - AI23@HCMUS, AI Challenge HCMC 2024.
+      I lead a team to participate in the contest: Event Retrieval from Visual Data (task: Video-text Retrieval), Team WATLERE - AI23@HCMUS, AI Challenge HCMC 2024 & 2025.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
       items:
         - "C/C++, Python"
         - "Nix, NixOS, Git, Github"
-        - "Pandas, Numpy"
-        - "FastAPI, LynxJS"
+        - "Numpy, Pandas, Polars"
+        - "FastAPI, Milvus, ElasticSearch"
         - "Video-text Retrieval"
-        - "Socket Programming"
+        - "SQL Server"
 
   # Experience
   experience:
@@ -234,9 +236,9 @@ params:
         GPA: "9.0 / 10.0"
         content: |-
           Learning & Competitions - HSfG@BaoLoc:
-          - Math major: Inequality Equations, Euclidean Geometry, Solid Geometry, Combination & Probability, Integral Calculus.
+          - Math major: Inequality Equations, Euclidean & Solid Geometry, Combination & Probability, Integral Calculus.
           - First Prize in Mathematics, Provincial-level Excellent Students Contest Grade 12, Lam Dong 2023
-          - 1012/1200 point (top 0,237%), APT 2023 - VNUHCM.
+          - 1012/1200 point (top 0,237%), V-ACT 2023 - VNUHCM.
         featuredLink:
           enable: false
           name: "My academic record"
@@ -269,27 +271,31 @@ params:
       - title: Participated in the Final Round of the 5th AI Challenge HCMC 2024, (Event retrieval from visual data)
         content: verified by Ho Chi Minh City Department of Information and Communications, Oct 2024
         image: /images/profile/aic24.png
+      - title: Top 4 on public test, EVENTA Grand Challenge @ ACM Multimedia 2025
+        content: arxiv.org/abs/2507.20564 | github.com/ductai05/ZSE-Cap
+        image: /images/profile/EVENTA.png
   # projects
   projects:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Maze Game
-        content: A simple maze game made with Python.
-        image: /images/projects/s2y1_mazegame.png
+      - title: Math for AI
+        content: A collection of self-research on mathematics for AI and Machine Learning.
+        image: /images/projects/y2s2_math4ai.png
         featured:
-          name: Demo
-          link: https://www.youtube.com/watch?v=DU6L0tnjWak
+          name: Demo & Explain CLIP
+          link: https://www.youtube.com/watch?v=1G227RKnv-k
         badges:
           - "Python"
-          - "DSA"
+          - "Jupyter Notebook"
+          - "Math"
         links:
           - icon: fab fa-github
-            url: https://github.com/ductai05/S2Y1_MazeGame
+            url: https://github.com/ductai05/Math-For-AI
 
       - title: Control Computer via Gmail
         content: Control a cluster of Server computers within a LAN from a Client by SMTP, IMAP, Socket.
-        image: /images/projects/s1y2_socket.png
+        image: /images/projects/y2s1_socket.png
         featured:
           name: Demo
           link: https://www.youtube.com/watch?v=wPzeurOE8So
@@ -298,29 +304,42 @@ params:
           - "Computer Networking"
         links:
           - icon: fab fa-github
-            url: https://github.com/ductai05/socket
+            url: https://github.com/ductai05/Y2S1-ComputerNetworking
 
-      # - title: Research - Deploy Vitual Try-On system
-      #   content: Research and deploy a virtual try-on system for fashion products.
-      #   image: /images/projects/s1y1_deployvton.png
-      #   featured:
-      #     name: Report + Demo
-      #     link: https://github.com/ductai05/S1Y1_DeployVTON
-      #   badges:
-      #     - "Python"
-      #     - "VTON"
-      #     - "AI"
-      #     - "Computer Vision"
-      #   links:
-      #     - icon: fab fa-github
-      #       url: https://github.com/ductai05/S1Y1_DeployVTON
+      - title: Maze Game
+        content: A simple maze game made with Python.
+        image: /images/projects/y1s2_mazegame.png
+        featured:
+          name: Demo
+          link: https://www.youtube.com/watch?v=DU6L0tnjWak
+        badges:
+          - "Python"
+          - "DSA"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/ductai05/Y1S2-MazeGame
+
+      - title: Research - Deploy Vitual Try-On system
+        content: Research and deploy a virtual try-on system for fashion products.
+        image: /images/projects/y1s1_deployvton.png
+        featured:
+          name: Report + Demo
+          link: https://github.com/ductai05/Y1S1-Virtual-Try-on
+        badges:
+          - "Python"
+          - "VTON"
+          - "AI"
+          - "Computer Vision"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/ductai05/Y1S1-Virtual-Try-on
 
       # - title: Research - AI Pipline
       #   content: Research AI pipline for application.
-      #   image: /images/projects/s1y1_aipipline.png 
+      #   image: /images/projects/y1s1_aipipline.png 
       #   featured:
       #     name: Code + Report
-      #     link: https://github.com/ductai05/S1Y1_AI-Pipeline
+      #     link: https://github.com/ductai05/Y1S1-AI-Pipeline
       #   badges:
       #     - "Python"
       #     - "AI"
@@ -328,7 +347,7 @@ params:
       #     - "Deep Learning"
       #   links:
       #     - icon: fab fa-github
-      #       url: https://github.com/ductai05/S1Y1_AI-Pipeline
+      #       url: https://github.com/ductai05/Y1S1-AI-Pipeline
 
 
   #Contact

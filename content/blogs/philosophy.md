@@ -1,7 +1,7 @@
 ---
 title: "Philosophy 1001"
 date: 2025-04-13T15:48:20+07:00
-draft: false
+draft: true
 github_link: "https://github.com/ductai05"
 author: "Duc Tai"
 tags:
